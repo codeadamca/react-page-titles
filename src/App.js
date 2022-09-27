@@ -1,6 +1,7 @@
 import './App.css';
 
 import {BrowserRouter, Switch, Link} from 'react-router-dom';
+import {Page} from './extensions/Page';
 
 import Home from './pages/Home';
 import About from './pages/About';
@@ -21,10 +22,12 @@ function App() {
           <Link to="/contact">Contact</Link>
         </nav>
         <main>
-        <Switch>
-            <Home exact path="/" component={Home} title=""></Home>
-            <About exact path="/about" component={Home} title=""></About>
-            <Contact exact path="/contact" component={Home} title=""></Contact>
+          <Switch>
+
+            <Page path="/" component={Home} title="Home Page"></Page>
+            <Page path="/about" component={About} title="About"></Page>
+            <Page path="/contact" component={Contact} title="Contact"></Page>
+          
           </Switch>
         </main>
       </div>
