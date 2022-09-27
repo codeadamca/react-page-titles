@@ -2,6 +2,7 @@ import './App.css';
 
 import {BrowserRouter, Switch, Link} from 'react-router-dom';
 import {Page} from './extensions/Page';
+import React,{Component} from "react";
 
 import Home from './pages/Home';
 import About from './pages/About';
@@ -24,8 +25,8 @@ function App() {
         <main>
           <Switch>
 
-            <Page path="/" component={Home} title="Home Page"></Page>
-            <Page path="/about" component={About} title="About"></Page>
+            <Page exact path="/" component={Home} title="Home"></Page>
+            <Page path="/about" component={About} title="About Me"></Page>
             <Page path="/contact" component={Contact} title="Contact"></Page>
           
           </Switch>
