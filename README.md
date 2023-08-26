@@ -4,7 +4,9 @@ A basic example of changing page titles when navigating a React app.
 
 This example uses the [react-navigation](https://github.com/codeadamca/react-navigation) repo as a starting point. 
 
-## Tutorial Requirements:
+***
+
+## Repo Resources
 
 * [React.js](https://reactjs.org/)
 * [react-router-dom](https://www.npmjs.com/package/react-router-dom)
